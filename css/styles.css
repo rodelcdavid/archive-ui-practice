@@ -9,13 +9,21 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+a:hover {
+  color: #96e6a1;
+}
+
 .container {
   width: 100%;
   height: 100vh;
-  background-image: url("http://source.unsplash.com/random/1080x720");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 .main-header-text {
@@ -23,6 +31,12 @@ body {
   font-weight: 500;
   font-size: 3rem;
   color: white;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: black;
+  text-shadow: 1px 2px rgb(116, 114, 114);
+  padding-top: 1rem;
+}
+
+.august-container {
+  height: 30%;
+  background-color: white;
+  margin: 2rem;
 }

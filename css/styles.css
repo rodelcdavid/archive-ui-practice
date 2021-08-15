@@ -10,10 +10,12 @@ body {
 }
 
 a {
+  display: block;
   color: black;
   cursor: pointer;
   text-decoration: none;
   margin: 1rem;
+  background-color: #939b7f;
 }
 
 a:hover {
@@ -36,8 +38,10 @@ a:hover {
 }
 
 .august-container {
+  text-align: center;
   height: 50%;
   height: 30%;
   background-color: white;
   margin: 2rem;
+  overflow-y: scroll;
 }

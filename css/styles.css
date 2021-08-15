@@ -15,7 +15,7 @@ a {
   color: black;
   cursor: pointer;
   text-decoration: none;
-  margin: 1rem;
+  margin: 1rem auto;
   background-color: #939b7f;
 }
 

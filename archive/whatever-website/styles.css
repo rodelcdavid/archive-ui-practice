@@ -1,0 +1,90 @@
+:root {
+  --primary: #ddd;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  background-color: #f6d6ad;
+  height: 1rem;
+  padding: 1em;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  margin: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.push {
+  margin-left: auto;
+}
+
+/* Showcase */
+.showcase {
+  display: grid;
+  height: 100%;
+  background-color: #ccf6c8;
+  padding: 2em;
+  grid-template-areas:
+    "showcase-img showcase-img heading"
+    "showcase-img showcase-img description";
+}
+
+.showcase-img {
+  grid-area: showcase-img;
+  margin-right: 2em;
+}
+
+.showcase img {
+  height: 100%;
+}
+
+.heading {
+  grid-area: heading;
+  align-self: flex-end;
+}
+
+.description {
+  grid-area: description;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  height: 60vh;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Testimonials */
+.testimonials {
+  display: grid;
+  height: 40vh;
+  background-color: #ccf6c8;
+}
+
+/* Download */
+.download {
+  display: grid;
+  height: 60vh;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Footer */
+footer {
+  display: grid;
+  height: 20vh;
+  background-color: #fafcc2;
+}

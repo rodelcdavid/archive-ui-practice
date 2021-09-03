@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.cards-container {
+  margin: 5.5rem 1.5rem;
+}
+
+.card {
+  padding: 3rem;
+}
+
+.card h1,
+p,
+button {
+  margin-top: 2.5rem;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+}
+
+.card.bright-orange {
+  border-radius: 10px 10px 0 0;
+}
+
+.card.very-dark-cyan {
+  border-radius: 0 0 10px 10px;
+}
+
+.bright-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+button {
+  width: 147px;
+  padding: 18px 33px;
+  border-radius: 30px;
+  border: solid hsl(0, 0%, 95%) 2px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+button.sedan {
+  color: hsl(31, 77%, 52%);
+}
+
+button.suv {
+  color: hsl(184, 100%, 22%);
+}
+
+button.luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+  background-color: transparent;
+  border: solid hsl(0, 0%, 95%) 2px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (min-device-width: 1200px) {
+  .cards-container {
+    display: flex;
+    margin: 3.5rem 14.5rem;
+  }
+
+  .card {
+    padding: 2.75rem;
+  }
+
+  .card.bright-orange {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card.very-dark-cyan {
+    border-radius: 0 10px 10px 0;
+  }
+}

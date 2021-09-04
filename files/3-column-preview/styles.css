@@ -36,15 +36,8 @@ button {
   line-height: 1.8;
 }
 
-.card.bright-orange {
-  border-radius: 10px 10px 0 0;
-}
-
-.card.very-dark-cyan {
-  border-radius: 0 0 10px 10px;
-}
-
 .bright-orange {
+  border-radius: 10px 10px 0 0;
   background-color: hsl(31, 77%, 52%);
 }
 
@@ -53,6 +46,7 @@ button {
 }
 
 .very-dark-cyan {
+  border-radius: 0 0 10px 10px;
   background-color: hsl(179, 100%, 13%);
 }
 

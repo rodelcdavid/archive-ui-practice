@@ -1,0 +1,103 @@
+:root {
+  --very-dark-sat-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+.card {
+  /* margin: 9rem 1.5rem 0; */
+  margin: 9rem 1.5rem;
+  width: calc(100% - 3rem);
+  background-color: white;
+  border-radius: 20px;
+  padding: 8.625rem 1.625rem 5.25rem;
+
+  position: relative;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+.hero-mobile {
+  position: absolute;
+  top: -108px;
+  left: calc((100% / 2) - 9rem);
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: calc((100% / 2) - 7.3rem);
+}
+
+.card h1 {
+  color: var(--very-dark-sat-blue);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Accordions */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: white;
+  font-weight: 400;
+  color: var(--very-dark-grayish-blue);
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: solid 1px var(--light-grayish-blue);
+}
+
+.accordion:after {
+  content: url(./images/icon-arrow-down.svg); /* Unicode character for "plus" sign (+) */
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion:hover {
+  color: var(--soft-red);
+}
+
+.active:after {
+  content: url(./images/icon-arrow-down.svg);
+  transform: rotate(180deg); /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.active:hover {
+  font-weight: 700;
+  color: var(--very-dark-sat-blue);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding-top: 1rem;
+  color: var(--dark-grayish-blue);
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 12px;
+}

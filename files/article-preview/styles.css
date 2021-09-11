@@ -1,0 +1,108 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: var(--grayish-blue);
+  min-height: 100vh;
+  background-color: var(--light-grayish-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  background-image: url(./images/drawers.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  background-color: white;
+  width: 20rem;
+  text-align: center;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+}
+
+.content h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--very-dark-grayish-blue);
+}
+
+.author {
+  display: flex;
+  margin-top: 20px;
+}
+
+.author img {
+  border-radius: 100%;
+  width: 2.5rem;
+  justify-content: flex-start;
+}
+
+.author .author-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.author-details .name {
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+}
+
+.author button {
+  margin-left: auto;
+  align-self: center;
+  background-color: var(--light-grayish-blue);
+  border: none;
+  border-radius: 100%;
+  padding: 7px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    width: 41.25rem;
+    height: 15.75rem;
+  }
+
+  .img-container {
+    background-position: 0 0;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0 0px 10px;
+    overflow: visible;
+  }
+
+  .content {
+    height: 100%;
+    width: 70%;
+    border-radius: 0 10px 10px 0;
+  }
+}
